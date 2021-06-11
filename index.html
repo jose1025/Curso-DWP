@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de Blog de Café">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" crossorigin="crossorigin"
+    as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin"
+    as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- pendiente-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog de Deporte</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin center">Blog<span class="logo__bold">Dedeporte</span></h1>
+                </a>
+                <nav class="nav center">
+                    <a href="nosotros.html" class="nav__enlace">Nosotros</a>
+                    <a href="cursos.html" class="nav__enlace">Cursos</a>
+                    <a href="contacto.html" class="nav__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de deportes con las noticias más actuales</h2>
+            <p class="no-margin">Aquí encontrarás la información más actual con el análisis de los expertos</p>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+            <article class="entrada">
+                <div class="entrada__img">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog1.jpg" alt="Imagen uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Fútbol</h4>
+                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis, 
+                        sed nostrum est error a explicabo maiores sit blanditiis voluptates. 
+                        Dolorem officia aliquam delectus magni, amet in sapiente eveniet quaerat. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, magni enim iure minima quo.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario center">Leer entrada</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__img">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog2.jpg" alt="Imagen uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Basquetbol</h4>
+                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis, 
+                        sed nostrum est error a explicabo maiores sit blanditiis voluptates. 
+                        Dolorem officia aliquam delectus magni, amet in sapiente eveniet quaerat. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, magni enim iure minima quo.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario center">Leer entrada</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__img">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog3.jpg" alt="Imagen uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tenis</h4>
+                    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis, 
+                        sed nostrum est error a explicabo maiores sit blanditiis voluptates. 
+                        Dolorem officia aliquam delectus magni, amet in sapiente eveniet quaerat. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, magni enim iure minima quo.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario center">Leer entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Deportistas destacados</h3>
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Cristiano Ronaldo</h4>
+                    <p class="widget-curso__label">País: 
+                        <span class="widget-curso__info">Portugal</span></p>
+                    <p class="widget-curso__label">Deporte:
+                        <span class="widget-curso__info">Fútbol</span></p>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">LeBron James</h4>
+                    <p class="widget-curso__label">País: 
+                        <span class="widget-curso__info">Estados Unidos</span></p>
+                    <p class="widget-curso__label">Deporte:
+                        <span class="widget-curso__info">Basquetbol</span></p>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin center">Blog<span class="logo__bold">Dedeporte</span></h1>
+                </a>
+                <nav class="nav center">
+                    <a href="nosotros.html" class="nav__enlace">Nosotros</a>
+                    <a href="cursos.html" class="nav__enlace">Cursos</a>
+                    <a href="contacto.html" class="nav__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
